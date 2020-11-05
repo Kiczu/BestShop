@@ -11,14 +11,14 @@
     <header>
         <div class="container nav_container">
             <div>
-                <p class="logo">BestShop</p>
+                <a class="logo" href="#">BestShop</a>
             </div>
             <nav>
                 <ul class="menu">
-                    <li>Why us</li>
-                    <li>Benefits</li>
-                    <li>Prices</li>
-                    <li>Contact</li>
+                    <li><a class="menu_link" href=""> Why us</a></li>
+                    <li><a class="menu_link" href="">Benefits</a></li>
+                    <li><a class="menu_link" href="">Prices</a></li>
+                    <li><a class="menu_link" href="">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -31,11 +31,11 @@
             <p>
                 Open shop on our platform and increase your sales
             </p>
-            <a class="buttons" href="#">
+            <a class="buttons btn_open" href="#">
                 Open your shop
             </a>
         </div>
-        <div class="open_image"></div>
+        <img class="open_image" src="./assets/Background.png" alt="">
     </section>
     <section class="statistics">
         <div class="container">
@@ -62,7 +62,7 @@
                         2000000+
                     </div>
                     <div class="statistics_icons_description">
-                        seen products every day
+                        seen products<br>every day
                     </div>
                 </div>
                 <div class="statistics_icons">
@@ -73,51 +73,41 @@
                         10000+
                     </div>
                     <div class="statistics_icons_description">
-                        added posts daily
+                        added posts<br>daily
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="tiles">
-        <div class="container">
-            <div class="tiles_container">
-                <div class="tiles_content">
-                    <h2 class="section_title">
-                        Be always first
-                    </h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                    </p>
+    <section class="benefits">
+        <div class="benefits_container container">
+            <div class="benefits_single-cart benefits_notebook">
+                <div class="benefits_text">
+                    <h2 class="benefits_title">Be always first</h2>
+                    <p class="benefits_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 </div>
-                <div class="tiles_image">
-                    <img src="./assets/Macbook.png" alt="">
+                <div class="benefits_image">
+                    <img src="./assets/Macbook.png" alt="Macbook">
                 </div>
             </div>
-            <div class="tiles_container">
-                <div class="tiles_image">
-                    <img src="./assets/iPhone.png" alt="">
+            <div class="benefits_single-cart benefits_phone">
+                <div class="benefits_text">
+                    <h2 class="benefits_title">Your shop is<br> where you are!</h2>
+                    <p class="benefits_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 </div>
-                <div class="tiles_content">
-                    <h2 class="section_title">
-                        Your shop is where you are!
-                    </h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                    </p>
+                <div class="benefits_image">
+                    <img src="./assets/iPhone.png" alt="phone">
                 </div>
             </div>
-            <div class="tiles_container">
-                <div class="tiles_content">
-                    <h2 class="section_title">
-                        Increase recognition your brand!
-                    </h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                    </p>
+            <div class="benefits_double-carts">
+                <div class="benefits_double-first-cart">
+                    <div class="benefits_text">
+                        <h2 class="benefits_title">Your shop is<br> where you are!</h2>
+                        <p class="benefits_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
                 </div>
-                <div class="tiles_image">
-                    <img src="./assets/Trumpet.png" alt="">
+                <div class="benefits_double-second-cart">
+                    <img src="./assets/Trumpet.png" alt="trumpet">
                 </div>
             </div>
         </div>
@@ -133,9 +123,11 @@
                     <h3 class="pricing_title">
                         Basic
                     </h3>
-                    <p class="prcing_price">
-                        $0
-                    </p>
+                    <div class="pricing_details">
+                        <p class="pricing_price">
+                            $0
+                        </p>
+                    </div>
                     <ul class="pricing_list">
                         <li class="pricing_item">100 MB HDD</li>
                         <li class="pricing_item">1 Subdomain</li>
@@ -150,9 +142,14 @@
                     <h3 class="pricing_title">
                         Professional
                     </h3>
-                    <p class="prcing_price">
-                        $25
-                    </p>
+                    <div class="pricing_detail">
+                        <p class="pricing_price">
+                            $25
+                        </p>
+                        <p class="pricing_limited">
+                            Limited offer
+                        </p>
+                    </div>
                     <ul class="pricing_list">
                         <li class="pricing_item">500 MB HDD</li>
                         <li class="pricing_item">2 Subdomain</li>
@@ -167,9 +164,14 @@
                     <h3 class="pricing_title">
                         Premium
                     </h3>
-                    <p class="prcing_price">
-                        $60
-                    </p>
+                    <div class="pricing_details">
+                        <p class="pricing_price">
+                            $60
+                        </p>
+                        <p class="pricing_limited">
+                            Limited offer
+                        </p>
+                    </div>
                     <ul class="pricing_list">
                         <li class="pricing_item">2 GB HDD</li>
                         <li class="pricing_item">5 Subdomain</li>
@@ -188,28 +190,26 @@
                     <h1>Any questions?</h1>
                     <p>Leave your email address or call us!</p>
                     <div class="form_section_icons">
-                        <ul>
-                            <li><a class="message_icon" href="">info@bestshop.xyz</a></li>
-                            <li><a class="phone_icon" href="">123 456 789</a></li>
-                        </ul>
+                            <a class="message_icon" href="mailto:info@bestshop.xyz">info@bestshop.xyz</a>
+                            <a class="phone_icon" href="tel:123456789">123 456 789</a>
                     </div>
             </div>
             <div class="form_section_form">
                 <form class="form">
-                    <label for="">
+                    <label class="form_label" for="">
                         <p>name</p>
                         <input type="text" class="inputText">
                     </label>
-                    <label for="">
-                        <p>email</p>
+                    <label class="form_label" for="">
+                        <p>e-mail</p>
                         <input type="email" class="inputText">
                     </label>
                     <label class="form_checkbox">
                         <input type="checkbox">
-                        <span class="checkbox"></span>
-                        <span class="consent_text">
+                        <p class="checkbox"></p>
+                        <p class="consent_text">
                         I hereby give consens for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parlament's and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of the personal data and on the free movement of such data, and repaling Directive 95/46/EC (Data Protection Directive)
-                        </span>
+                        </p>
                     </label>
                     <button type="submit" class="buttons form_button">Send</button>
                 </form>
@@ -218,8 +218,8 @@
     </section>
     <footer>
         <div class="container footer_container">
-            <div>
-                <p class="footer_logo">BestShop</p>
+            <div class="footer_info">
+                <a class="footer_logo_text" href="#">BestShop</a>
                 <p class="copyright">&copy; 2019 BestShop LTD, All Rights Reserved</p>
             </div>
             <div class="footer_socials">
