@@ -1,6 +1,8 @@
 .open_section {
-    // height: 100vh - 85px;
+    height: 100vh;
     .open_image {
+        position: absolute;
+        bottom: 0;
         max-width: 100%;
         height: auto;
     }
@@ -22,6 +24,7 @@
         max-width: 50%;
     }
     .btn_open {
-        padding: 20px 110px;
+        padding: 20px 90px;
+        box-shadow: 5px 10px 14px #07ACE629;
     }
 }

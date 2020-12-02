@@ -41,6 +41,15 @@ nav {
         display: block;
         box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
     }
+    #hamburger:checked ~  .hamburger__icon span:nth-child(1) {
+        transform: rotate(45deg) translate(2px, 5px);
+    }
+    #hamburger:checked ~  .hamburger__icon span:nth-child(2) {
+        display: none;
+    }
+    #hamburger:checked ~  .hamburger__icon span:nth-child(3) {
+        transform: rotate(-45deg) translate(2px, -5px);
+    }
     .header__nav {
         position: absolute;
         left: 0px;

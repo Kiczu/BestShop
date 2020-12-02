@@ -1,8 +1,13 @@
 @import './generic/reset';
 @import './settings/breakpoint';
 @import './settings/fonts';
-@import './settings/variables';
 @import './settings/colors';
+@import './settings/variables';
 @import './generic/base';
 @import './elements/header';
 @import'./elements/open-section';
+@import './elements/statistics';
+@import './elements/benefits';
+@import './elements/pricing';
+@import './elements/form-section';
+@import './elements/footer';

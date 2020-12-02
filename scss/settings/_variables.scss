@@ -1,1 +1,16 @@
-$main-radius: 35px;
+@use "sass:map";
+@use "sass:list";
+$main-radius: 1.125rem;
+
+$color-list: map-values($colors-icons);
+@for $i from 1 through list.length($color-list) {
+    .statistics_icons:nth-child(#{$i}) .statistics_icons_cringle {
+        background-color: list.nth($color-list, $i);
+    }
+}
+@mixin titles {
+    font-size: 30px;
+    font-family: $relaway;
+    color: $color-black;
+    padding: 20px 0;
+}
