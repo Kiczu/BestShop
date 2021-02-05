@@ -7,27 +7,29 @@
     display: flex;
     flex-direction: column-reverse;
     text-align: center;
-    width: 80%;
+    width: 95%;
     padding: 50px 30px;
     margin: 50px auto;
     background-color: #fff;
+    border: 1px solid $benefits-border;
+    border-radius: 5px;
 
     .benefits_text {
         text-align: left;
+        max-width: 345px;
 
         .benefits_title {
             @include titles();
         }
         .benefits_description {
-            font-size: .875rem;
-            line-height: 1.25rem;
+            line-height: 1.375rem;
         }
     }
     .benefits_image {
         position: relative;
         img {
             position: relative;
-            max-width: 80%;
+            max-width: 50%;
             height: auto;
             z-index: 2;
         }
@@ -39,30 +41,34 @@
     }
 }
 .benefits_notebook .benefits_image::before {
-    width: 50%;
+    width: 30%;
     height: 100%;
     position: absolute;
     top: -15%;
-    right: 5%;
+    right: 20%;
     background-color: $color-redish;
 }
 .benefits_phone .benefits_image::before {
-    width: 62%;
+    width: 42%;
     height: 100%;
     position: absolute;
     top: -5%;
-    left: 10%;
+    left: 20%;
     background-color: $primary-color;
 }
 .benefits_double-carts {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
     background-color: #fff;
+    border: 1px solid $benefits-border;
+    border-radius: 5px;
 
     .benefits_double-first-cart{
         padding: 10px 30px 40px 30px;
+
+
         .benefits_title {
             @include titles();
             line-height: 2rem;
@@ -77,13 +83,78 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        border-radius: 5px;
 
         img {
             position: relative;
-            top: 50px;
-            max-width: 80%;
+            margin-top: 55px;
+            max-width: 30%;
             height: auto;
             z-index: 2;
         }
+    }
+}
+@media only screen and (min-width: 1025px) {
+    .benefits_single-cart {
+        padding: 100px 30px;
+    }
+    .benefits_notebook {
+        flex-direction: row;
+        width: 80%;
+        .benefits_text {
+            margin: 0 36px;
+
+            .benefits_description {
+
+                &::after {
+                    content: "";
+                    display: block;
+                    height: 4px;
+                    margin-top: 50px;
+                    background-color: #FB3B64;
+                }
+            }
+        }
+    }
+    .benefits_phone {
+        flex-direction: row-reverse;
+        width: 80%;
+
+        .benefits_description {
+
+            &::after {
+                content: "";
+                display: block;
+                height: 4px;
+                margin-top: 50px;
+                background-color: #08A6E4;
+            }
+        }
+    }
+    .benefits_notebook .benefits_image {
+        margin-right: 50px;
+
+        &::before {
+            width: 60%;
+            top: -20%;
+            left: 45%;
+            border-radius: 40px;
+            transform: rotate(45deg);
+        }
+    }
+    .benefits_phone .benefits_image::before {
+        width: 75%;
+        top: -5%;
+        left: 0;
+    }
+    .benefits_image {
+        position: relative;
+        img {
+            max-width: 100% !important;
+            
+        }
+    }
+    .benefits_double-carts {
+        width: 80%;
     }
 }

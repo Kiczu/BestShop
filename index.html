@@ -1,39 +1,43 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
+
+
     <title>Best Shop</title>
 </head>
+
 <body>
-<header>
-    <div class="container">
-        <a href="#" class="header__logo">BestShop</a>
-        <nav>
-            <input type="checkbox" name="hamburger" id="hamburger">
-            <label for="hamburger" class="hamburger__icon">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-            <ul class="header__nav">
-                <li class="nav__elements">
-                    <a href="" class="nav__elements-link">Why us</a>
-                </li>
-                <li class="nav__elements">
-                    <a href="" class="nav__elements-link">Benefits</a>
-                </li>
-                <li class="nav__elements">
-                    <a href="" class="nav__elements-link">Pricing</a>
-                </li>
-                <li class="nav__elements">
-                    <a href="" class="nav__elements-link">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</header>
+    <header>
+        <div class="container">
+            <a href="#" class="header__logo">BestShop</a>
+            <nav>
+                <input type="checkbox" name="hamburger" id="hamburger">
+                <label for="hamburger" class="hamburger__icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul class="header__nav">
+                    <li class="nav__elements">
+                        <a href="" class="nav__elements-link">Why us</a>
+                    </li>
+                    <li class="nav__elements">
+                        <a href="" class="nav__elements-link">Benefits</a>
+                    </li>
+                    <li class="nav__elements">
+                        <a href="" class="nav__elements-link">Pricing</a>
+                    </li>
+                    <li class="nav__elements">
+                        <a href="" class="nav__elements-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <section class="open_section">
         <div class="open_section_cta container">
             <h1>
@@ -95,7 +99,8 @@
             <div class="benefits_single-cart benefits_notebook">
                 <div class="benefits_text">
                     <h2 class="benefits_title">Be always first</h2>
-                    <p class="benefits_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <p class="benefits_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 </div>
                 <div class="benefits_image">
                     <img src="./assets/Macbook.png" alt="Macbook">
@@ -104,7 +109,8 @@
             <div class="benefits_single-cart benefits_phone">
                 <div class="benefits_text">
                     <h2 class="benefits_title">Your shop is<br> where you are!</h2>
-                    <p class="benefits_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <p class="benefits_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 </div>
                 <div class="benefits_image">
                     <img src="./assets/iPhone.png" alt="phone">
@@ -114,7 +120,8 @@
                 <div class="benefits_double-first-cart">
                     <div class="benefits_text">
                         <h2 class="benefits_title">Increase<br> recognition your brand!</h2>
-                        <p class="benefits_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <p class="benefits_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                     </div>
                 </div>
                 <div class="benefits_double-second-cart">
@@ -195,33 +202,109 @@
             </div>
         </div>
     </section>
+    <section class="calc">
+        <h2>Calculate how much you’ll pay</h2>
+        <div class="calc__columns">
+            <form class="calc__form">
+                <div class="calc__input">
+                    <input type="number" class="form__input" id="products" min="1" step="1"
+                        placeholder="Products quantity" />
+                </div>
+                <div class="calc__input">
+                    <input type="number" class="form__input" id="orders" min="1" step="1"
+                        placeholder="Estimated orders in month" />
+                </div>
+                <div class="calc__select" id="package" data-value="">
+                    <div class="select__input">
+                        Choose package
+                    </div>
+
+                    <ul class="select__dropdown">
+                        <li data-id="option" class="basic">Basic</li>
+                        <li data-id="option" class="proffesional">Professional</li>
+                        <li data-id="option" class="premium">Premium</li>
+                    </ul>
+                </div>
+                <label class="form__checkbox">
+                    <input type="checkbox" id="accounting" />
+                    <span class="checkbox"></span>
+                    <p class="consent__text">Accounting</p>
+                </label>
+                <label class="form__checkbox">
+                    <input type="checkbox" id="terminal" />
+                    <span class="checkbox"></span>
+                    <p class="consent__text">Rental of a payment terminal</p>
+                </label>
+            </form>
+
+            <div class="calc__summary">
+                <ul>
+                    <li class="list__item" data-id="products">
+                        <span class="item__type">Products</span>
+                        <span class="item__calc product__calc">20 * $3</span>
+                        <span class="item__price product__price">$0</span>
+                    </li>
+                    <li class="list__item" data-id="orders">
+                        <span class="item__type">Orders</span>
+                        <span class="item__calc orders__calc">20 * $2</span>
+                        <span class="item__price orders__price">$0</span>
+                    </li>
+                    <li class="list__item" data-id="package">
+                        <span class="item__type">Package</span>
+                        <span class="item__calc package__name">Basic</span>
+                        <span class="item__price package__price">$0</span>
+                    </li>
+                    <li class="list__item" data-id="accounting">
+                        <span class="item__type">Accounting</span>
+                        <span class="item__price accounting__input"></span>
+                    </li>
+                    <li class="list__item" data-id="terminal">
+                        <span class="item__type">Terminal</span>
+                        <span class="item__price terminal__input"></span>
+                    </li>
+                </ul>
+                <div class="summary__total" id="total-price">
+                    <span>Total</span>
+                    <span class="total__price">$</span>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="form_section">
         <div class="container form_section_container">
             <div class="form_section_question">
-                    <h1>Any questions?</h1>
-                    <p>Leave your email address or call us!</p>
-                    <div class="form_section_icons">
-                            <a class="message_icon" href="mailto:info@bestshop.xyz">info@bestshop.xyz</a>
-                            <a class="phone_icon" href="tel:123456789">123 456 789</a>
-                    </div>
+                <h1>Any questions?</h1>
+                <p>Leave your email address or call us!</p>
+                <div class="form_section_icons">
+                    <a class="message_icon" href="mailto:info@bestshop.xyz">info@bestshop.xyz</a>
+                    <a class="phone_icon" href="tel:123456789">123 456 789</a>
+                </div>
             </div>
             <div class="form_section_form">
                 <form class="form">
-                    <label class="form_label" for="">
-                        <p>name</p>
-                        <input type="text" class="inputText">
-                    </label>
-                    <label class="form_label" for="">
-                        <p>e-mail</p>
-                        <input type="email" class="inputText">
-                    </label>
-                    <label class="form_checkbox">
-                        <input type="checkbox">
-                        <p class="checkbox"></p>
-                        <p class="consent_text">
-                        I hereby give consens for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parlament's and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of the personal data and on the free movement of such data, and repaling Directive 95/46/EC (Data Protection Directive)
-                        </p>
-                    </label>
+                    <div class="form_field">
+                        <label class="form_label" for="name">Name</label>
+                        <input type="text" class="inputText name" id="name">
+                    </div>
+                    <div class="form_field">
+                        <label class="form_label" for="">E-mail</label>
+                        <input type="email" class="inputText email" id="email">
+                    </div>
+                    <div class="form_consent">
+                        <label class="form_checkbox">
+                            <input type="checkbox">
+                            <span class="checkbox"></span>
+                            <p class="consent_text">
+                                I hereby give consens for my personal data included in my application to be processed
+                                for
+                                the purposes of the recruitment process under the European Parlament's and Council of
+                                the
+                                European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with
+                                regard to the processing of the personal data and on the free movement of such data, and
+                                repaling Directive 95/46/EC (Data Protection Directive)
+                            </p>
+                        </label>
+                    </div>
                     <button type="submit" class="buttons form_button">Send</button>
                 </form>
             </div>
@@ -239,5 +322,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/app.js"></script>
 </body>
+
 </html>

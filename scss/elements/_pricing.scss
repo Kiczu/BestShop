@@ -21,7 +21,6 @@
         gap: 30px;
         border-radius: $main-radius;
         margin: 30px 0;
-        padding: 20px;
         font-size: .875rem;
 
         .pricing_details {
@@ -90,7 +89,9 @@
 }
 .pricing_boxes-basic {
     border: 1px solid $color-redish;
-    width: 70%;
+    width: 100%;
+    max-width: 370px;
+    padding: 20px;
 
     .pricing_price {
         color: $color-redish;
@@ -107,7 +108,9 @@
 }
 .pricing_boxes-professional {
     border: 1px solid $primary-color;
-    width: 80%;
+    width: 100%;
+    padding: 20px;
+    max-width: 400px;
     box-shadow: 5px 10px 27px #07ACE629;
 
     .pricing_price {
@@ -125,7 +128,9 @@
 }
 .pricing_boxes-premium {
     border: 1px solid $color-green;
-    width: 70%;
+    width: 100%;
+    max-width: 370px;
+    padding: 20px;
 
     .pricing_price {
         color: $color-green;
@@ -138,5 +143,24 @@
             background-color: $color-white;
             color: $color-green;
         }
+    }
+}
+@media (min-width: 1352px) {
+    .pricing_container_boxes {
+        flex-direction: row;
+        gap: 50px;
+    }
+    .pricing_boxes {
+        flex-direction: column;
+
+        .pricing_details {
+            gap: 20px;
+        }
+    }
+    .pricing_boxes-basic {
+        padding: 37px;
+    }
+    .pricing_boxes-professional {
+        padding: 50px;
     }
 }

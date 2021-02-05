@@ -7,15 +7,12 @@
     justify-content: center;
     align-items: center;
     .section_title {
+        font-family: $relaway;
         text-align: center;
-        font-size: 30px;
+        font-size: 2.25rem;
         line-height: 1.25em;
-        max-width: 65%;
     }
     .statistics_icons_container {
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
         margin: 30px 0;
         .statistics_icons {
             display: flex;
@@ -24,6 +21,7 @@
             align-items: center;
             gap: 15px;
             text-align: center;
+            margin: 20px 0;
             .statistics_icons_cringle {
                 position: relative;
                 width: 63px;
@@ -33,10 +31,28 @@
                 align-items: center;
                 border-radius: 50%;
             }
+            .statistics_icons_title {
+                font-size: 1.25rem;
+                font-weight: 800;
+                letter-spacing: .1875rem;
+                font-family: $relaway;
+            }
+            .statistics_icons_description {
+                color: $color-grey;
+            }
         }
     }
 }
 .statistics_icons_cringle img{
     position: absolute;
     left: 50%;
+}
+@media only screen and (min-width: 793px) {
+    .statistics_icons_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 20px;
+    }
 }

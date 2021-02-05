@@ -2,13 +2,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    max-width: 90%;
+    max-width: 1352px;
+    padding: 0 20px;
 }
 .form_section_question {
 
     h1 {
-        font-size: 2.5rem;
+        font-size: 3.0625rem;
         font-family: $relaway;
         padding: 20px 0;
     }
@@ -47,31 +47,40 @@
 .form {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 20px;
     padding-top: 50px;
+    .form_field {
+        display: flex;
+        flex-direction: column;
+
+        &:first-of-type {
+            margin-bottom: 40px;
+        }
+    }
     .form_label {
         font-size: .8rem;
         font-weight: 600;
         letter-spacing: 3px;
         color: $primary-color;
         text-transform: uppercase;
-        .inputText {
-            padding: 5px;
-            margin: 15px 0;
-            border: none;
-            border-bottom: 1px solid $color-grey;
-            min-width: 280px;
-        }
+    }
+    .inputText {
+        border: none;
+        border-bottom: 1px solid $color-grey;
+        background-color: transparent;
+        line-height: 2.625rem;
     }
 }
 .form_checkbox {
-    display: flex;
+    display: block;
     position: relative;
-    max-width: 80%;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 1.375rem;
+
     input {
         position: absolute;
-        cursor: pointer;
         height: 0;
         width: 0;
         &:checked ~ .checkbox {
@@ -89,9 +98,10 @@
         width: 25px;
         background-color: $color-white;
         border: 1px solid $color-grey;
+        border-radius: 4px;
     }
     .consent_text {
-        color: #707070;
+        color: #a5a5a5;
         font-size: .75rem;
         text-transform: none;
         font-weight: 400;
@@ -105,4 +115,17 @@
     margin-right: 10%;
     align-self: flex-end;
     box-shadow: 5px 10px 14px #07ACE629;
+}
+@media (min-width: 1024px) {
+    .form_section_container {
+        flex-direction: row;
+        padding: 80px 100px 100px;
+
+        .form_section_question {
+            width: 50%;
+        }
+        .form_section_form {
+            width: 50%;
+        }
+    }
 }

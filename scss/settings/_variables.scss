@@ -9,7 +9,7 @@ $color-list: map-values($colors-icons);
     }
 }
 @mixin titles {
-    font-size: 30px;
+    font-size: 2.25rem;
     font-family: $relaway;
     color: $color-black;
     padding: 20px 0;
